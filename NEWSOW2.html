@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News OW2</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        body{
+         background-image: linear-gradient(to left,rgba(26, 32, 49, 0.959),rgb(54, 65, 85), rgba(26, 32, 49, 0.959) );;;
+         cursor: all-scroll;
+        }
+        :root {
+  --Dark: #00233c;
+  --Primary: #0269b3;
+  --Accent: #80e8ff;
+  --AccentLight: #ecf9ff;
+  --Border: #ddd;
+  --Text: #333;
+  --Invert: #fff;
+  --Disabled: #d3d3d3;
+}   
+
+         .button8 {
+            transition: all .50s ease;
+        }
+
+        .button8:hover {
+            border-radius: 20px;
+            letter-spacing: 1px;
+            background: transparent;
+            color: crimson;
+             backdrop-filter: blur(3px);
+            line-height: 32px;
+             text-shadow: 0 4px 10px rgba(0,0,0,.2);
+            
+
+        }
+
+        .isi1{
+             background-image: linear-gradient(to bottom,  #9bbddd,#c9d9ee);
+            
+        }
+        
+        .button9 {
+            background-color: slateblue;
+            color: white;
+
+        
+        }
+
+        .button9:hover {
+            color: white;
+            background-color: rgb(240, 130, 27);
+/*            background-image: linear-gradient(45deg, #4568dc, #b06ab3);*/
+            font-weight: bolder;
+            transition: background-color .5s ease-in-out  ;
+            transition: all .50s ease;
+            padding: 10px;
+        }
+
+        .card{
+            box-shadow:20px 4px 10px rgba(0,0,0,.2); ;
+        }
+
+        .card:hover{
+            scale: 1.03;
+            cursor: pointer;    
+            transition: all .40s ease;
+            font-weight: 900;
+
+        }
+
+        .isi2{
+            background-image: linear-gradient(#009dff,#33b1ff);
+            min-height: 1750px;
+            color: var(--Invert);
+
+
+             
+        }
+       /* .wrapper-group {
+    padding: 3rem 1.25rem;
+  }
+  .feature,
+  .explore {
+    padding: 64px 20px;
+  }
+  .group-explore-cards {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .invert-card {
+    min-width: 18rem;
+  }
+*/
+/*
+.explore {
+  background-image: url("paris.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--Invert);
+}*/
+
+/*/*.explore-content {
+  text-align: center;
+}
+
+.group-explore-cards {
+  display: flex;
+  gap: 1rem;
+  margin-left: 0px;
+  /* flex-wrap: wrap;} */
+
+/*.wrapper-content {
+  display: grid;
+  gap: 40px;
+}*/
+.list-feature {
+  display: grid;
+  gap: 1rem;
+}
+
+.cardnew:hover{
+background: hsla(0,0%,100%,.15);
+cursor: pointer;
+scale: 1.01;
+}
+
+
+
+/*img.img-feature {
+  border-radius: 12px;
+}
+  .feature {
+    display: flex;
+    gap: 80px;
+    padding: 100px;
+  }*/
+  .card-item {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  border-bottom: 1px solid var(--Border);
+  border-radius: 12px;
+}
+
+ .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+       /* @media (min-width: 576px)
+        #carbonads {
+            border-radius.5rem
+        }
+
+        #carbonads{
+            position: static;
+display: block;
+max-width: 400px;
+padding: 15px 15px 15px 160px;
+margin: 2rem 0;
+overflow: hidden;
+font-size: .8125rem;
+line-height: 1.4;
+text-align: left;
+background-color: magenta;
+        }
+
+        *, ::after. ::before {
+            box-sizing: border-box;
+        }
+*/
+
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light border-dark fixed-top mt-2 ms-2 me-2" style=" background-color:rgb(240, 241, 244); 
+    border: 2px solid rgb(238, 148, 148);
+    backdrop-filter: blur(5px);border-radius: 25px;">
+  <div class="container">
+     <a class="navbar-brand text-warning" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/024/553/676/small/skull-wearing-crown-logo-skull-king-sticker-pastel-cute-colors-generative-ai-png.png" alt="Logo" width="60" height="60" class="d-inline-block "></a> 
+
+      <div class="btn-group">
+    <button type="button" class="btn btn-dark"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdfb7edda1a73806e/660607862829dd2d50e9cfde/enUS_Logo.png?" width="100">  </button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+            <a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">Media</a></li>
+            <li><a class="dropdown-item" href="#">Patch Notes</a></li>
+    </ul>
+  </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+                <a class="button8 nav-link" aria-current="page" style="font-weight: 800;"href="gabutstrap.html">Home</a>
+                 <a class="button8 nav-link" style="color: #black;font-family: Big Noodle Too,impact,;font-weight: 800;" href="HEROESOW2.html">Heroes</a>
+                 <a class="button8 nav-link" style="color: #black; font-family: Big Noodle Too,impact,; font-weight: 800;" href="SEASONOW2.html">Season</a>
+                 <a class="nav-link" style="color: black;font-family: Big Noodle Too,impact,;font-weight: 800; font-size: large;" href="#">News</a>
+                <a class="button8 nav-link" style="color: #black;font-family: Big Noodle Too,impact,;font-weight: 800; " href="#"> Community</a>
+                <a class="button8 nav-link" style="color: #black;font-family: Big Noodle Too,impact,;font-weight: 800; " href="#">Shop</a>
+
+    </div>
+
+         <div class="dropdown-center">
+  <button class="btnav btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="25px" height="25px" class="img-fluid" alt="...">
+    Account
+  </button>
+  <ul class="dropdown-menu">
+    <a href="" button type="button" class="btn btn-outline-primary"><img src="https://cdn.iconscout.com/icon/free/png-256/free-battlenet-3215370-2673788.png" width="30px" height="30px">Log In</button></a>
+    <li><a class="dropdown-item" href="#"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="30px" height="30px"> Overwatch Profile</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod6SmLF3zlFa7Ga6gsmiI1z-V-qGt4WshNQ&s" width="30px" height="30px">Account Settings</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjfvSkKcgjNHB-p9nFGa6aSZL-qy8jJSXtw&s" width="30px" height="30px">Sign Up</a></li>
+  </ul>
+</div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- ISI 1 -->
+
+<div class="isi1">
+
+    <div style="padding-top: 8rem;" class="container text-center">
+        <h1 class="news" style="color: black;text-shadow: 0 4px 10px hsla(0,0%,100%,.4); font-weight: 900;">NEWS</h1>
+    </div>
+<!-- card -->
+    <div class="container">
+    <div class="row">
+
+<div style="background-color: #0f2941;" class="card1 card col-lg-3  col-sm-6 mt-5">
+    <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/fq/FQOCI3ZS5LO21712885085657.png" width="100%" height="65%" class="img-fluid mb-5" alt="..."> 
+     <div>
+    <h5 class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">Discover a World Turned Over – the Mirrorwatch Event Begins Today</h5> <br>
+    <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">April 24</p>
+</div>
+</div>
+
+<div style="background-color: #1f2f3d;" class="card2 card col-lg-3 col-sm-6 mt-5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSWx5M3zfauw6MwtgHh3n5CPiBFt3898NE7Q&s" width="100%" height="65%" class="img-fluid mb-5" alt="..."> 
+     <div>
+    <h5 class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">Director’s Take: Addressing Unapproved Peripherals on Consoles</h5> <br>
+    <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">April 19</p>
+</div>
+</div>
+
+<div style="background-color: #0f2941;" class="card3 card col-lg-3  col-sm-6 mt-5">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrORofIrne44x-DAyOXnLzMa_eR0AoyhsAIg&s" width="100%" height="65%" class="img-fluid mb-5" alt="..."> 
+     <div>
+    <h5 class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">Ready to Make History - A Look into Venture's Development</h5> <br>
+    <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">April 18</p>
+</div>
+</div>
+
+<div style="background-color: #1f2f3d;" class="card4 card col-lg-3 col-sm-6 mt-5">
+    <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8096a64bdfb0102b/6605db6e480726439a3b4ee1/Choose_Your_Mythic.jpg?format=webply&quality=90" width="100%" height="65%" class="img-fluid mb-5" alt="..."> 
+     <div>
+    <h5 class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">Choose Your Mythic Skin with the New Mythic Shop</h5> <br> <br>
+    <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);">April 17</p>
+</div>
+</div>
+<!-- card end -->
+
+
+</div>
+</div> <br> <br>
+
+<div class="container text-center">
+    <a style="font-weight: 900; letter-spacing: 1px; line-height: 32px; text-shadow: 0 4px 10px rgba(0,0,0,.2);"class="button9 btn  btn-lg" href="#" role="button">VIEW PATCH NOW --></a>
+</div> <br> <br>
+
+</div>
+
+   <!-- ISI 1 END -->
+
+   <!-- ISI 2 -->
+   <div class="isi2">
+    <div class="container">
+
+
+<div class="feature-right">
+        <div class="wrapper-feature-content">
+          <div class="list-feature ">
+
+            <div class="cardnew card-item mt-4">
+            <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nj/NJJNAYZAKLD21712889761422.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+              <h1 style="color: var(--invert); font-size: 35px;font-weight: 600;">CHOOSE YOUR MYTHIC SKIN WITH THE NEW MYTHIC SHOP <p style="margin-top: 10px; font-size: 15px;">Now you can unlock the Mythic hero skins you want in Overwatch 2 in the all-new Mythic Shop</p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">April 16, 2024</p> </h1>
+            </div>
+
+            <div class="cardnew card-item">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/r6/R68LZWSBPQ281712884846094.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+              <h1 style="color: var(--invert); font-size: 30px;font-weight: 600;">DRILL INTO THE COMPETITION IN OVERWATCH 2 - SEASON 10<p style="margin-top: 10px; font-size: 15px;">Dive into the latest season with the new Damage hero Venture and discover a world turned over in Mirrorwatch</p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">April 15, 2024</p> </h1>
+            </div>
+
+            <div class="cardnew card-item">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/92/92BVC5L1C2DZ1664296929969.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+               <h1 style=" color: var(--invert); font-size: 35px;font-weight: 600;">Defense Matrix Update: Season 10 and Beyond <p style="margin-top: 10px; font-size: 15px;">Learn about upcoming changes to Overwatch that help get friends playing together while cutting down disruptive behavior. </p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">April 10, 2024</p> </h1>
+            </div>
+          </div>
+
+           <div class="cardnew card-item mt-3">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ch/CHS404BZMCSO1712680538115.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+             <h1 style="color: var(--invert); font-size: 35px;font-weight: 600;">Director’s Take: Welcoming Venture to Overwatch<p style="margin-top: 10px; font-size: 15px;">Aaron Keller’s latest blog takes a look at how well Venture has been welcomed into the game.
+</p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">April 9, 2024</p> </h1>
+            </div>
+          </div>
+
+           <div class="cardnew card-item mt-3">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/re/REGGB5OK47EO1711512644299.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+               <h1 style="color: var(--invert); font-size: 35px;font-weight: 600;">Venture Shakes Up the Game this Weekend! <p style="margin-top: 10px; font-size: 15px;">Play Overwatch 2’s new Damage hero all weekend in a limited-time hero trial! </p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">March 28, 2024</p> </h1>
+            </div>
+          </div>
+
+           <div class="cardnew card-item mt-3">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ao/AOIQ1RSFQ2OQ1710827725680.png" width="22%" height="65%" class="img-fluid" alt="..."> 
+              <h1 style="color: var(--invert); font-size: 30px;font-weight: 600;">Developer Update: Hero Releases, Mythics, and Gameplay Updates <p style="margin-top: 10px; font-size: 15px;">Our latest Developer Update addresses big changes to heroes, new ways to unlock Mythic hero skins, and gameplay updates in the seasons to come. </p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">March 19, 2024</p> </h1>
+            </div>
+          </div>
+
+            <div class="container">
+          <div class="cardnew card-item mt-3">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/o9/O9XKZOBZDBMK1709954359614.png" width="20%" height="65%" class="img-fluid" alt="..."> 
+              <h1 style="color: var(--invert); font-size: 35px;font-weight: 600;">Overwatch 2 x Cowboy Bebop collab event now live!<p style="margin-top: 10px; font-size: 15px;">Overwatch 2 and Cowboy Bebop come together in a new collab event that is out of this world. </p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">March 12, 2024</p> </h1>
+            </div>
+
+             <div class="cardnew card-item mt-3">
+               <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/au/AUF6G4P31TN31709955681374.png" width="21%" height="70%" class="img-fluid" alt="..."> 
+              <h1 style="color: var(--invert); font-size: 35px;font-weight: 600;">Test your Teamwork in Hero Mastery Gauntlet <p style="margin-top: 10px; font-size: 15px;">Gather your friends and test your skills in this new tower-defense Co-op mode! </p>  <p class=" text-light" style="font-weight:900 ;text-shadow: 0 4px 10px hsla(0,0%,100%,.4);font-size: 20px;margin-top: 2rem;">March 12, 2024</p> </h1>
+            </div>
+     
+      </div>
+
+      <div class="container text-center mt-5">
+
+        <a style="font-weight: 900; letter-spacing: 1px; line-height: 32px; text-shadow: 0 4px 10px rgba(0,0,0,.2);"class="button9 btn  btn-lg" href="#" role="button">LOAD MORE</a> <br>
+          
+      </div>
+
+      </div>
+      </div>
+
+
+    <!-- ISI 2 END -->
+
+ <!-- FOOTER SOSMED -->
+
+<div style="min-height: 0px; background-image: linear-gradient(to left,rgba(38, 50, 77, 0.959), rgb(71, 93, 134),rgba(38, 50, 77, 0.959));;">
+
+    <div class="container text-center"> <br>
+         <h1 class="stay" style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">STAY CONNECTED</h1>
+    </div>
+    <br> <br>
+
+    <div class="logo text-center justify-content-center">
+
+        <a style="margin-left:; " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWQtmRYRE2pKMMWs-voz8ZKqwDmD2s93-eQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+        
+        <a style="margin-left:  " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCv2roPyXwqS4UagIhO7dojXYOf7Qs5V3Rg&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style=";background-color:hsla(0,0%,100%,.15) ;
+border-radius: 50%;
+padding: 5px;" src="https://cdn.icon-icons.com/icons2/1221/PNG/512/1492608049-15-youtube-video-player-play-logo-media_83366.png" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style="background-color: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRap2mGyOXLUZWDk7vco575fuMNwl7DhFjcQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+     <br><br>
+    </div>
+
+</div>
+
+<!-- FOOTER SOSMED END -->
+
+<!-- FOOTER -->
+
+<div style="min-height: 500px; background-image: linear-gradient(to left,rgba(26, 32, 49, 0.959),rgb(54, 65, 85), rgba(26, 32, 49, 0.959) );; ">
+<div class="container">
+        <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul class="footer-links mt-5">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <hr>
+                <div class="footer-section">
+                <div class="mt-5 ms-2">
+<a style="margin-left:20px  " class="gun mt-5" href="#">
+      <img style=";
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRI4NiIsbFSGQ3E_SCb8IHM51d1AUpA4qrA&s" alt="Logo" width="30%" height="135" class="blizzard">
+     </a>
+     <p class="infoter" style="color:#fff;" class="ms-2">©2024 Blizzard Entertainment, Inc.
+All trademarks
+ referenced herein are the properties of their respective owners.</p>
+</div>
+  </div>
+    </div>
+           
+           
+        <div class="footer-bottom">
+              <div class="btn-group dropend mt-5">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    English (US)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+    <li><a class="dropdown-item" href="#">Arabic</a></li>
+    <li><a class="dropdown-item" href="#">Spanish</a></li>
+    <li><a class="dropdown-item" href="#">Jawa</a></li>
+    <li><a class="dropdown-item" href="#">Madura</a></li>
+  </ul>
+</div>        
+    </footer>
+
+
+ </div>
+</div>
+
+
+<!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <script type="">
+        ScrollReveal({
+            reser : true,
+            distance :'60px',
+            duration : 2500,
+            delay:400 
+        });
+
+         //NAVBAR 
+          ScrollReveal().reveal('.navbar', {delay :300, origin: 'bottom' });
+           ScrollReveal().reveal('.btn-group', {delay :300, origin: 'left' });
+            ScrollReveal().reveal('.btnav', {delay :300, origin: 'right' });
+             ScrollReveal().reveal('.heroes', {delay :300, origin: 'bottom' });
+           // NAVBAR END
+
+             // ISI 1
+              ScrollReveal().reveal('.news', {delay :300, origin: 'bottom' });
+               ScrollReveal().reveal('.card1', {delay :300, origin: 'left' });
+                ScrollReveal().reveal('.card2', {delay :300, origin: 'right' });
+                 ScrollReveal().reveal('.card3', {delay :300, origin: 'top' });
+                  ScrollReveal().reveal('.card4', {delay :300, origin: 'right' });
+                   ScrollReveal().reveal('.btn', {delay :300, origin: 'bottom' });
+             // ISI 1 END
+
+                   // ISI 2
+                    ScrollReveal().reveal('.cardnew', {delay :300, origin: 'left' });
+                   // ISI 2 END
+
+           
+           // FOOTER SOSMED
+                      ScrollReveal().reveal('.stay', {delay :300, origin: 'bottom' });
+                       ScrollReveal().reveal('.logo', {delay :300, origin: 'top' });
+                     // FOOTER SOSMED END
+
+                       // FOOTER
+                        ScrollReveal().reveal('.footer-links', {delay :300, origin: 'left' });
+                         ScrollReveal().reveal('.blizzard', {delay :300, origin: 'bottom' });
+                          ScrollReveal().reveal('.infoter', {delay :300, origin: 'right' });
+                       // FOOTER END
+
+
+      </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <div id="carbonads">
+    <span>
+        <span class="carbon-warp">
+            <a class="carbon-img" href="">
+                <img src="https://srv.carbonads.net/static/30242/99598a49bedd4878110a5f6071eff761b3c1e2da" style="max-width: 130; height: 100; border: 0;">
+            </a>
+
+            <a href="https://srv.carbonads.net/ads/click/x/GTND427JCEAD6K7JCAB4YKQUC6BDPKJJCKYDTZ3JCAYIP23ECEAIP27KCABDC2QIC6YD627WCWAIVKJLCWAIP5QKC6SI423YCKADVK3EHJNCLSIZ" class="carbon-text">
+        I've spent 2 years learning DNS while building NSLookup.io. Now, I'm teaching everything I know in this course.
+    </a>
+        </span>
+        <a href="" class="carbon-poweredby">ads via carbon</a>
+    </span>
+</div> -->
+
+
+<!-- <div class="explore" id="explore">
+      <div class="explore-content">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p class="mt-3">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the
+        </p>
+        <div class="group-explore-cards mt-5">
+          <div class="card invert-card" style="width: 18rem">
+            <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt8096a64bdfb0102b/6605db6e480726439a3b4ee1/Choose_Your_Mythic.jpg?format=webply&quality=90" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h3>Kashmir</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card invert-card" style="width: 18rem">
+            <img src="ImageCard2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h3>Kashmir</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card invert-card" style="width: 18rem">
+            <img src="ImageCard2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h3>Kashmir</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card invert-card" style="width: 18rem">
+            <img src="ImageCard2.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h3>Kashmir</h3>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+ -->
