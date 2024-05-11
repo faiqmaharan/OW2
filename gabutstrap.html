@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overwatch2</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <style>
+        body{
+          
+        }
+        carousel-inner{
+            margin-top: 20px;
+        }
+        
+       .jumbotron{
+        text-align: center;
+        background-image: linear-gradient(to right,#d3d7f3,#ffe5d6 50%);
+       opacity: 1;
+       min-height: 600px;
+       }
+       .display{
+        color: #1d253a;
+        text-shadow: 0 4px 10px hsla(0,0%,100%,.4);
+        text-transform: uppercase;
+        padding-top: 10px;
+       }
+       
+        .btn {
+        margin-left: 20px;
+        }
+
+        .btnheroes:hover {
+            color: white;
+            background-color: crimson;
+/*            background-image: linear-gradient(45deg, #4568dc, #b06ab3);*/
+            font-weight: bolder;
+            transition: background-color .5s ease-in-out  ;
+            scale: 1.2;
+        }
+
+        .container3{
+            font-family: Arial, sans-serif;
+            background-image: url(https://imageio.forbes.com/specials-images/imageserve/64d26ac2c9c4cef380034c65/Overwatch-2-Invasion-skin-for-Pharah/960x0.png?format=png&width=960);
+            background-size: cover;
+            background-repeat:no-repeat ;
+        }       
+
+         .button8 {
+            transition: all .40s ease;
+        }
+
+        .button8:hover {
+            border-radius: 20px;
+            letter-spacing: 1px;
+            background: transparent;
+            color: crimson;
+             backdrop-filter: blur(3px);
+            line-height: 32px;
+             text-shadow: 0 4px 10px rgba(0,0,0,.2);
+            
+
+        }
+
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        
+   
+        
+    </style>
+</head>
+<body style="background-color:rgb(240, 241, 244);">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light border-dark fixed-top mt-2 ms-2 me-2" style=" background-color:rgb(240, 241, 244); 
+    border: 2px solid rgb(238, 148, 148);
+    backdrop-filter: blur(5px); border-radius:25px;">
+  <div class="container">
+     <a class="navbar-brand text-warning" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/024/553/676/small/skull-wearing-crown-logo-skull-king-sticker-pastel-cute-colors-generative-ai-png.png" alt="Logo" width="60" height="60" class="d-inline-block "></a> 
+
+      <div class="btn-group">
+    <button type="button" class="btnav btn btn-dark"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdfb7edda1a73806e/660607862829dd2d50e9cfde/enUS_Logo.png?" width="100">  </button>
+    <button type="button" class="btnav btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+            <a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">Media</a></li>
+            <li><a class="dropdown-item" href="#">Patch Notes</a></li>
+    </ul>
+  </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link" aria-current="page" style="color: black;
+                font-size: large;
+                font-weight: 800; " href="#">Home</a>
+                 <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="HEROESOW2.html">Heroes</a>
+                 <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="SEASONOW2.html">Season</a>
+                 <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="NEWSOW2.html">News</a>
+                <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#"> Community</a>
+                <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">Shop</a>
+    </div>
+
+        <div class="dropdown-center">
+  <button class="btn btnav btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="25px" height="25px" class="img-fluid" alt="...">
+    Account
+  </button>
+
+  <ul class="dropdown-menu">
+    <a href="" button type="button" class="btn btn-outline-primary"><img src="https://cdn.iconscout.com/icon/free/png-256/free-battlenet-3215370-2673788.png" width="30px" height="30px">Log In</button></a>
+    <li><a class="dropdown-item" href="#"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="30px" height="30px"> Overwatch Profile</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod6SmLF3zlFa7Ga6gsmiI1z-V-qGt4WshNQ&s" width="30px" height="30px">Account Settings</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjfvSkKcgjNHB-p9nFGa6aSZL-qy8jJSXtw&s" width="30px" height="30px">Sign Up</a></li>
+  </ul>
+</div>
+
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- GESER -->
+
+<div style="background-color: black;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div style="margin-top: 5.4rem;" class="carousel-inner ">
+    <div class="carousel-item active sm-12">
+      <img src="https://gambar.sgp1.digitaloceanspaces.com/wp-content/uploads/2019/11/maxresdefault-1.jpg"  class="d-block w-100" alt="...">
+    </div>
+    <div style="margin-top: rem;" class="carousel-item">
+      <img src="https://estnn.com/wp-content/uploads/2023/10/Overwatch-2-_-Season-7_-Rise-of-Darkness-_-Official-Trailer-2-2-screenshot.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.cnet.com/a/img/resize/9a2b756af67e8cd00f075fccc2ec0ce251b6af56/hub/2022/12/05/ed149feb-eb7b-47d8-b9c7-59f00c58fe9c/ow2-s2-bpkeyart.png?auto=webp&fit=crop&height=675&width=1200" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- GESER END -->
+
+ <!-- isi 1-->
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col"> <br>
+               <h1 class="h1isi1" style="color: #fff;
+                font-family: Big Noodle Too,impact,sans-serif;
+                font-size: 32px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">TEAM UP AND JOIN THE FIGHT</h1> 
+                <br>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-12 col-xl-6 mt-2">
+                <h1 class="display">CRITICALLY-ACCLAIMED HERO ACTION SHOOTER</h1>
+
+<div class="info1">
+  <p style="color: rgba(29,37,58,.9);text-shadow: 0 4px 10px hsla(0,0%,100%,.4);" class="lead">Overwatch 2 is a free-to-play shooter featuring 30+ epic heroes, each with game-changing abilities. Choose your hero, group up with your friends and battle across all-new maps and modes in the ultimate team-based shooter.</p>
+  <a class="btn1 btn btn-warning btn-lg" href="#" role="button">Play Free Now</a> <br>
+</div>
+
+<div class="col"> 
+  <a style="text-decoration: none;" href="#">
+      <img src="https://cdn.worldvectorlogo.com/logos/xbox-2.svg" alt="Logo" width="100" height="100" class="imgisi1 d-inline-block "> 
+  </a> 
+  <a style="text-decoration: none;" href="#">
+      <img src="https://cdnlogo.com/logos/p/56/playstation-and-wordmark.svg" alt="Logo" width="30%" height="30%" class="imgisi1 d-inline-block "> 
+  </a> 
+  <a style="text-decoration: none;"  href="#">
+      <img src="https://cdnlogo.com/logos/s/60/steam.svg" alt="Logo" width="18%" height="20%" class="imgisi1 d-inline-block "> 
+  </a> 
+  <a style="text-decoration: none;"  href="#">
+      <img src="https://1000logos.net/wp-content/uploads/2022/10/BattleNet-logo.png" alt="Logo" width="15%" height="20%" class="imgisi1 d-inline-block "> 
+  </a> 
+       
+            </div>
+            </div>
+            <div class="col">  
+  <img src=" https://static.wikia.nocookie.net/overwatch_gamepedia/images/d/d4/Kiriko-portrait.png/revision/latest/scale-to-width-down/350?cb=20221114213127" width="70%" height="70%" class="imgisi1 img-fluid" alt="...">
+            </div>     
+
+
+        </div> 
+
+    </div>  
+</div>
+
+<!-- end isi 1-->
+
+<!-- ISI 2 -->
+<div id="hero" style="background-image:linear-gradient(to left,rgba(216, 94, 23, 0.959), rgb(236, 130, 81)); padding-top: 5rem;">
+<div class="container"> <br>
+     <h1 class="h1isi2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); 
+                text-align: center;">CHOOSE YOUR HERO</h1> 
+<div class="row"> 
+  <h5 class="h5isi2" style="color: white; text-align: center; ">Overwatch 2 is about working with your team to complete the mission objectives in every match. With your hero's skills and abilities, you'll be on the path to Victory!</h5>
+  </div>
+  </div>
+<br> <br>
+
+<div class="container">
+<div class="row">
+
+<div class="col1isi2 col-lg-4 col-sm-12">
+    <a style="margin-left: 40%; " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt7a1e35d6b66ebe0b/64a72e2c70f6557bc66dcf9c/Protect_Your_Team.png?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a> <br> <br>
+     <div>
+    <h5 style="font-weight:900 ;" class="">WIELD POWERFUL WEAPONS</h5>
+    <p>Each hero uses a signature weapon that is unique to them and their playstyle, ranging from upclose melee weapons and shotguns to long-range sniper rifles that can hit from a distance.</p> <hr>
+</div>
+</div>
+
+
+<div class="col2isi2 col-lg-4 col-sm-12">
+    <a style="margin-left: 40%; " class="" href="#">
+      <img style="background: hsla(0,0%,100%,.15); border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt451e9e607acad0dc/64a72e2c9d480a8704791cbd/Dive_Into_Enemy_Lines.png?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a> <br> <br>
+     <div>
+    <h5 style="font-weight:900 ;" class="">THREE ROLES TO SUPPORT THE TEAM</h5>
+    <p>Tank heroes fight to make space, Damage heroes work to secure eliminations, and Support heroes heal and enable everyone on the team. Which role will you choose?</p> <hr>
+</div>
+</div>
+
+
+<div class="col3isi2 col-lg-4 col-sm-12">
+    <a style="margin-left: 40%; " class="" href="#">
+      <img style="background: hsla(0,0%,100%,.15);border-radius: 50%;padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt9fbfa85b97f3e60e/64a72e2c5a4242628e49b0c7/Close_Up_Brawlers.png?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a> <br> <br>
+     <div>
+    <h5 style="font-weight:900 ;" class="">CHANGE THE GAME WITH ULTIMATE ABILITIES</h5>
+    <p>Raging dragons that soar through the map, a self-destructing mech that obliterates everything in sight, or an EMP burst that shuts down the opponents. </p> <hr>
+</div>
+</div>
+
+<div class="container">
+    <div class="row text-center mt-5"></div>
+       <h1 class="roles" style="color: black;
+                font-weight: 900;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);
+                text-align: center;">ROLES</h1> 
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d099d316-98cf-4095-a2f9-32cca4219baa/daeznzy-ea3a67e0-48c3-4565-b475-cf804f49c8fb.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2QwOTlkMzE2LTk4Y2YtNDA5NS1hMmY5LTMyY2NhNDIxOWJhYVwvZGFlem56eS1lYTNhNjdlMC00OGMzLTQ1NjUtYjQ3NS1jZjgwNGY0OWM4ZmIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.KLwf0bXHk836ApSJ85YgYhHCSdz3sB8hvW1bda3vFRA" width="90%" height="90%" class="genji img-fluid" alt="...">
+        </div>
+        <div style="text-align: center;" class="col-lg-12 col-xl-6 mt-2 mt-5">
+            <h1 class="damage" style=" font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700; " class=""><a class="" href="#"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6dd57af021be8abc/649e298841448e1afbfe9f7e/Damage.svg?format=webply&quality=90" alt="Logo" width="40" height="40" class="d-inline-block"></a>DAMAGE</h1> <br>
+      <p class="damageinfo" style="text-shadow: 0 4px 10px rgba(0,0,0,.2); color: hsla(0,0%,100%,.9);font-weight: 500;">Damage heroes seek out,engage,and obliterate the enemy with wide-ranging tools,abilities,and paly styles. Fearsome but fragile,these heroes require backup to survive</p> <hr>
+        </div>
+
+ <div class="row text-center"></div>
+    <div class="row">
+        <div class="col ms-5">
+            <img src="https://static.wikia.nocookie.net/villains/images/e/ef/Dfmrgpo-325b5f4f-8418-4c62-9bd9-63abc4ae6214.png/revision/latest?cb=20230812135230" width="70%" height="70%" class="ramatra img-fluid" alt="...">
+        </div>
+        <div style="text-align:center;" class="col-lg-12 col-xl-6 mt-2 mt-5"><h1 style=" font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700; " class="tank"><a class="" href="#"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt6b4712c05d2dc7f3/649e2986149a1f115edae5d7/Tank.svg?format=webply&quality=90" alt="Logo" width="40" height="40" class="d-inline-block "></a>TANK</h1> <br>
+      <p class="tankinfo" style="text-shadow: 0 4px 10px rgba(0,0,0,.2); color: hsla(0,0%,100%,.9);font-weight: 500;">Tank heroes soak up and shatter fortified positions, like closely grouped enemies and narriw chokepoints. If you're a tank, you lead the charge!</p> <hr>
+        </div>
+
+<div class="row text-center mt-5"></div>
+    <div class="row">
+        <div class="col ms-5">
+            <img src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/5/5a/OW2_Moira.png/revision/latest?cb=20240404082150"  width="50%" height="50%" class="witch img-fluid" alt="...">
+        </div>
+        <div style="text-align:center;" class="col-lg-12 col-xl-6 mt-2 mt-5"><h1 style=" font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700; " class="support"><a class="" href="#"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt518218492c5c4538/649e2985149a1f8cacdae5d3/Support.svg?format=webply&quality=90" alt="Logo" width="90" height="40" class="d-inline-block"; ></a>SUPPORT</h1> <br>
+      <p class="supportinfo" style="text-shadow: 0 4px 10px rgba(0,0,0,.2); color: hsla(0,0%,100%,.9);font-weight: 500;">Support heroes empower their allies by healing,shielding,boosting damage, and disabing foes. As a support, you're the bacbone of your team's survival.</p> <hr> <a style="font-weight: 900;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);
+
+                " class="btnheroes btnav btn-light btn mb-3" href="HEROESOW2.html" role="button">SEE ALL HEROES</a>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+  <!-- ISI2 END -->
+
+<!-- ISI 3 -->
+
+
+<div class="container3">  
+<div class="container">
+<div class="row">
+<div style="margin-top:5%" class="col-lg-4">
+   <h1 class="gamefeatures" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); ">GAME FEATURES</h1> <br> <br>
+     <div>
+    <p class="gamefeaturesinfo" style="color: hsla(0,0%,100%,.9); font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2)">Featuring dozens of maps and a variety of ways to play, you'll want to grab your friends, group up, and dive into everything Overwatch 2 has in store.</p> <hr>
+</div>
+</div>
+
+<!-- Nav tabs -->
+
+<div><h1 class="click" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2">CLICK </h1></div>
+
+<div class="row">
+<div class="noted" style="width:55%; background-color:hsla(0,0%,100%,.15);" class="col-lg-4 col-sm-12"><p style="font-weight: 900;
+color: #dark;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">Noted! "You have to click in order from 1-5" </p></div></div>
+
+<ul class="pilih nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img style="background: #5d7198cc;border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt737bda78bdf50b15/64a72ed03563c9c27ee78eb1/Heroes.svg?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block"><p style=" color:orange;">1</p></button>
+  </li>
+
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><img style="background-color: #5d7198cc;border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltecc2fcc7a0bffb75/64a72ed0fe8f2308fb1b7593/Action.svg?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block"><p style="color:orange;">2</p></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false"><img style="background: #5d7198cc;border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blta6499a4e459be2ec/64a72ed03563c9060be78eaf/Cross_Play.svg?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block"><p style="color:orange;">3</p></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false"><img style="background: #5d7198cc;border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt96f97e2e3322ba97/64a72ed0f3e1fd7c4bc4a6ff/Story_Mission.svg?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block"><p style="color:orange;">4</p></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="freetoplay-tab" data-bs-toggle="tab" data-bs-target="#freetoplay" type="button" role="tab" aria-controls="freetoplay" aria-selected="false"><img style="background: #5d7198cc;border-radius: 50%; padding: 5px;" src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt398024681a6667d4/64a72ed0f49c6d31d5ffa46b/F2P.svg?format=webply&quality=90" alt="Logo" width="60" height="60" class="d-inline-block"><p style="color:orange;">5</p></button>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+
+<div class="tab-content">
+  <div class="tab-pane active mt-5 col-lg-6 " id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> <h1 class="ms-2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2)">1. ALL NEW HEROES</h1> 
+                <h5 style="color: white; font-weight: 800
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); background-color: background: transparent;
+    border: 3px solid #5d7198cc;;
+    backdrop-filter: blur(10px); border-radius:5px"; class="ms-2" >New extraordinary heroes are always joining the roster. Whether you like to lead the charge, ambush enemies, or aid your allies, there’s a new hero for you.</h5> <img src="https://sportshub.cbsistatic.com/i/2023/10/04/88e01cf5-c518-478f-94ad-5e3f39c81e3e/overwatch-2-season-7-battlepass-rise-of-darkness.png" width="85%" height="65%" class="img-fluid mb-5 ms-2" alt="...">
+</div>
+
+  <div class="tab-pane active mt-5 col-lg-6 " id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"> <h1 class="ms-2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2)">2. BATTLE ACCROS THE GLOBE</h1> 
+                <h5 style="color: white; font-weight: 800
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); background-color: background: transparent;
+    border: 3px solid #5d7198cc;;
+    backdrop-filter: blur(10px); border-radius:5px" class="ms-2" >Overwatch 2 features dozens of maps acros the world. Whether you are escorting a payload, capturing a falshpoint, or pushing a barricade into enemy territory, you'll find every match to be unique and exciting.</h5> <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/a2/A29L6JCMAKTG1686286033027.png
+" width="85%" height="65%" class="img-fluid mb-5 ms-2" alt="...">
+</div>
+
+  <div class="tab-pane active mt-5 col-lg-6 " id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0"> <h1 class="ms-2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2)">3. CROSS-PLAY AND PROGRESSION</h1> 
+                <h5 style="color: ghostwhite; font-weight: 800
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); background-color: background: transparent;
+    border: 3px solid #5d7198cc;;
+    backdrop-filter: blur(10px); border-radius:5px" class="ms-2" >Play acros multiple and devices and acces your rewards, progress, and accolades anywhere, any time.</h5> <img src="https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4d3436783b23b618/65c15adc529b714c894a14d0/OW2_2024_S9-UBP_BNET-rollouts_SA01-Shop-feature.png" width="85%" height="105%" class="img-fluid mb-5 ms-2" alt="...">
+</div>
+
+
+
+ <div class="tab-pane active mt-5 col-lg-6 " id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0"> <h1 class="ms-2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">4. INVASION STORY MISSIONS</h1> 
+                <h5 style="color: whitesmoke; font-weight: 800
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); background-color: background: transparent;
+    border: 3px solid #5d7198cc;;
+    backdrop-filter: blur(10px); border-radius:5px" class="ms-2" >Dive into lore-rich story of Overwatch 2, and save the world from the invasion of Null Sector in all new Story Mission and your friends can play starting August 10!</h5> <img src="https://images5.alphacoders.com/132/1327221.png" width="85%" height="65%" class="img-fluid mb-5 ms-2" alt="...">
+</div>
+
+
+ <div class="tab-pane active mt-5 col-lg-6 " id="freetoplay" role="tabpanel" aria-labelledby="freetoplay-tab" tabindex="0"> <h1 class="ms-2" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2)">5. FREE-TO-PLAY</h1> 
+                <h5 style="color: floralwhite; font-weight: 800
+                text-shadow: 0 4px 10px rgba(0,0,0,.2); background-color: background: transparent;
+    border: 3px solid #5d7198cc;;
+    backdrop-filter: blur(10px); border-radius:5px" class="ms-2" >Overwatch 2 is a free-to-play and ever-evolving live game. Team up with friends regardless of platform and jump into the PvP experience.<br> <br>*Additional purchase required for invasion Story Mission</h5><img src="https://metro.co.uk/wp-content/uploads/2023/01/overwatch-2-battle-for-olympus-b29b.png" width="85%" height="65%" class="img-fluid mb-5 ms-2" alt="...">
+</div>
+
+
+</div>
+</div>
+
+</div>
+
+<!-- ISI 3 END -->
+
+<!-- ISI 4 -->
+<div style=" min-height: px; background-image:linear-gradient(to top,rgba(216, 94, 90, 0.959), rgb(236, 130, 81)) ">
+    <div class="container text-center"> <br>
+         <h1 class="teamup" style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);"><span style="color:black;">TEAM UP AND JOIN</span> THE FIGHT</h1> <br>
+        <img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/blt89c8f2ae904883e2/6504d00b57b3253ae44a8889/Support_Heroes_Mobile.png?format=webply&quality=90" width="%" height="" class="gang img-fluid"> <br> <br> <a class="btn btn-warning btn-lg mb-3" href="#" role="button"> <h1 style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: oblique;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">PLAY FREE NOW</h1>
+</a>
+
+
+    </div>
+</div>
+<!-- ISI 4 END -->
+
+<!-- FOOTER SOSMED -->
+
+<div style="min-height: 0px; background-image: linear-gradient(to left,rgba(38, 50, 77, 0.959), rgb(71, 93, 134),rgba(38, 50, 77, 0.959));;">
+
+    <div class="container text-center"> <br>
+         <h1 class="stay" style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">STAY CONNECTED</h1>
+    </div>
+    <br> <br>
+
+    <div class="logo text-center justify-content-center">
+
+        <a style="margin-left:; " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWQtmRYRE2pKMMWs-voz8ZKqwDmD2s93-eQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+        
+        <a style="margin-left:  " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCv2roPyXwqS4UagIhO7dojXYOf7Qs5V3Rg&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style=";background-color:hsla(0,0%,100%,.15) ;
+border-radius: 50%;
+padding: 5px;" src="https://cdn.icon-icons.com/icons2/1221/PNG/512/1492608049-15-youtube-video-player-play-logo-media_83366.png" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style="background-color: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRap2mGyOXLUZWDk7vco575fuMNwl7DhFjcQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+     <br><br>
+    </div>
+
+</div>
+
+<!-- FOOTER SOSMED END -->
+
+<!-- FOOTER -->
+
+<div style="min-height: 500px; background-image: linear-gradient(to left,rgba(26, 32, 49, 0.959),rgb(54, 65, 85), rgba(26, 32, 49, 0.959) );; ">
+<div class="container">
+        <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul class="footer-links mt-5">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <hr>
+                <div class="footer-section">
+                <div class="mt-5 ms-2">
+<a style="margin-left:20px  " class="gun mt-5" href="#">
+      <img style=";
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRI4NiIsbFSGQ3E_SCb8IHM51d1AUpA4qrA&s" alt="Logo" width="30%" height="135" class="blizzard">
+     </a>
+     <p class="infoter" style="color:#fff;" class="ms-2">©2024 Blizzard Entertainment, Inc.
+All trademarks
+ referenced herein are the properties of their respective owners.</p>
+</div>
+  </div>
+    </div>
+           
+           
+        <div class="footer-bottom">
+              <div class="btn-group dropend mt-5">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    English (US)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+    <li><a class="dropdown-item" href="#">Arabic</a></li>
+    <li><a class="dropdown-item" href="#">Spanish</a></li>
+    <li><a class="dropdown-item" href="#">Jawa</a></li>
+    <li><a class="dropdown-item" href="#">Madura</a></li>
+  </ul>
+</div>        
+    </footer>
+
+
+ </div>
+</div>
+
+<!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script type="">
+
+            alert("Recomended use PC/Laptop")
+            
+
+
+        ScrollReveal({
+            reser : true,
+            distance :'60px',
+            duration : 2500,
+            delay:400 
+        });
+
+        //NAVBAR 
+         ScrollReveal().reveal('.btnav',{delay :300, origin: 'left' });
+          ScrollReveal().reveal('.navbar', {delay :180, origin: 'bottom' });
+         
+           // NAVBAR END
+
+
+        // ISI 1
+        ScrollReveal().reveal('.display', {delay :300, origin: 'left' });
+        ScrollReveal().reveal('.h1isi1', {delay:300, origin: 'bottom'  });
+         ScrollReveal().reveal('.info1', {delay:300, origin: 'top'  });
+         ScrollReveal().reveal('.imgisi1', {delay:900, origin: 'right'  });
+          ScrollReveal().reveal('.btn1', {delay:800, origin: 'left'  });
+        // ISI 1 END
+
+          // ISI 2
+           ScrollReveal().reveal('.h1isi2', {delay :300, origin: 'top' });
+           ScrollReveal().reveal('.h5isi2', {delay :300, origin: 'right' });
+            ScrollReveal().reveal('.col1isi2', {delay :300, origin: 'left' });
+            ScrollReveal().reveal('.col2isi2', {delay :300, origin: 'bottom' });
+            ScrollReveal().reveal('.col3isi2', {delay :300, origin: 'right' });
+            ScrollReveal().reveal('.roles', {delay :300, origin: 'top' });
+            ScrollReveal().reveal('.genji', {delay :700, origin: 'left' });
+            ScrollReveal().reveal('.damage', {delay :300, origin: 'right' });
+            ScrollReveal().reveal('.damageinfo', {delay :300, origin: 'top' });
+            ScrollReveal().reveal('.ramatra', {delay :300, origin: 'left' });
+            ScrollReveal().reveal('.tank', {delay :300, origin: 'rigt' });
+            ScrollReveal().reveal('.tankinfo', {delay :300, origin: 'top' });
+            ScrollReveal().reveal('.witch', {delay :300, origin: 'left' });
+            ScrollReveal().reveal('.support', {delay :300, origin: 'rigt' });
+            ScrollReveal().reveal('.supportinfo', {delay :300, origin: 'top' });
+          // ISI 2 END
+
+            // ISI 3
+             // ScrollReveal().reveal('.gamefeatures', {delay :300, origin: 'top' });
+             //  ScrollReveal().reveal('.gamefeaturesinfo', {delay :300, origin: 'left' });
+             //   ScrollReveal().reveal('.click', {delay :300, origin: 'right' });
+             //    ScrollReveal().reveal('.noted', {delay :300, origin: 'bottom' });
+             //     ScrollReveal().reveal('.pilih', {delay :600, origin: 'left' });
+             //      ScrollReveal().reveal('.h1isi2', {delay :300, origin: 'top' });
+             //       ScrollReveal().reveal('.tab-content', {delay :300, origin: 'right' });
+            // ISI 3 END
+
+                   // ISI 4
+                    // ScrollReveal().reveal('.teamup', {delay :300, origin: 'bottom' });
+                    //  ScrollReveal().reveal('.gang', {delay :300, origin: 'top' });
+                   // ISI 4 END
+
+                     // FOOTER SOSMED
+                      // ScrollReveal().reveal('.stay', {delay :300, origin: 'bottom' });
+                      //  ScrollReveal().reveal('.logo', {delay :300, origin: 'top' });
+                     // FOOTER SOSMED END
+
+                       // FOOTER
+                        // ScrollReveal().reveal('.footer-links', {delay :300, origin: 'left' });
+                        //  ScrollReveal().reveal('.blizzard', {delay :300, origin: 'bottom' });
+                        //   ScrollReveal().reveal('.infoter', {delay :300, origin: 'right' });
+                       // FOOTER END
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!-- <div class="row">
+            <div class="col-lg-12 col-xl-6 mt-2">
+        <div class="container ">        
+<div class="col mt-5"> 
+<ul>
+      <a class="button8 nav-link" aria-current="page" style="color: #fff;
+                font-size: large;
+                font-weight: 800; " href="#">Careers</a>
+                 <a class="button8 nav-link" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">About</a>
+                 <a class="button8 nav-link" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">Support</a>
+                 <a class="button8 nav-link" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">Contact Us</a>
+                <a class="button8 nav-link" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#"> Press</a>
+                <a class="button8 nav-link" style="color: #fff;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">API</a>
+</ul>
+            </div>
+
+<div class="btn-group dropend">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    English (US)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+    <li><a class="dropdown-item" href="#">Menu item</a></li>
+  </ul>
+</div>
+     </div>
+     <div class="mt-5 ms-2">
+<a style="margin-left:20px  " class="gun mt-5" href="#">
+      <img style=";
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHfDBlbOGj0UB_gjA6DHr50U1qyS7yAKBvfA&s" alt="Logo" width="50%" height="140" class="d-inline-block ">
+     </a>
+     <p style="color:#fff;" class="ms-2">©2024 Blizzard Entertainment, Inc.
+All trademarks
+ referenced herein are the properties of their respective owners.</p>
+</div>
+            </div>
+
+
+        </div> 
+
+    </div>  
+</div>
+
+    </div>
+ -->
