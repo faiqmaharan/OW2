@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes OW2</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <script src="https://unpkg.com/scrollreveal"></script>
+        
+    <style>
+        body{
+          
+        }
+        carousel-inner{
+            margin-top: 20px;
+        }
+
+        .card:hover{
+            scale: 1.03;
+            cursor: pointer;
+            transition: all .30s ease;
+        }
+        
+      .btn {
+        margin-left: 20px;
+        }
+
+         .button8 {
+            transition: all .40s ease;
+        }
+
+        .button8:hover {
+            border-radius: 20px;
+            letter-spacing: 1px;
+            background: transparent;
+            color: crimson;
+             backdrop-filter: blur(3px);
+            line-height: 32px;
+             text-shadow: 0 4px 10px rgba(0,0,0,.2);
+            
+
+        }
+
+         .btnheroes:hover {
+            color: white;
+           background-color: crimson;
+/*            background-image: linear-gradient(45deg, #4568dc, #b06ab3);*/
+            font-weight: bolder;
+            transition: background-color .5s ease-in-out  ;
+            scale: 1.1;
+        }
+
+        h5{
+            font-weight: 900;
+        }
+
+.footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            margin: 0 15px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+
+
+      
+        
+   
+        
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light border-dark fixed-top mt-2 ms-2 me-2" style=" background-color:rgb(240, 241, 244); 
+    border: 2px solid rgb(238, 148, 148);
+    backdrop-filter: blur(5px);border-radius: 25px;">
+  <div class="container">
+     <a class="navbar-brand text-warning" href="#">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/024/553/676/small/skull-wearing-crown-logo-skull-king-sticker-pastel-cute-colors-generative-ai-png.png" alt="Logo" width="60" height="60" class="d-inline-block "></a> 
+
+      <div class="btn-group">
+    <button type="button" class="btn btn-dark"><img src="https://blz-contentstack-images.akamaized.net/v3/assets/blt2477dcaf4ebd440c/bltdfb7edda1a73806e/660607862829dd2d50e9cfde/enUS_Logo.png?" width="100">  </button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+            <a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">Media</a></li>
+            <li><a class="dropdown-item" href="#">Patch Notes</a></li>
+    </ul>
+  </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+                <a class="button8 nav-link" aria-current="page" style="font-weight: 800;"href="gabutstrap.html">Home</a>
+                 <a class="nav-link" style="color: black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 900; font-size: large; " href="#">Heroes</a>
+                 <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="SEASONOW2.html">Season</a>
+                 <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="NEWSOW2.html">News</a>
+                <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#"> Community</a>
+                <a class="button8 nav-link" style="color: #black;
+                font-family: Big Noodle Too,impact,;
+                font-weight: 800; " href="#">Shop</a>
+
+    </div>
+
+         <div class="dropdown-center">
+  <button class="btnav btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="25px" height="25px" class="img-fluid" alt="...">
+    Account
+  </button>
+  <ul class="dropdown-menu">
+    <a href="" button type="button" class="btn btn-outline-primary"><img src="https://cdn.iconscout.com/icon/free/png-256/free-battlenet-3215370-2673788.png" width="30px" height="30px">Log In</button></a>
+    <li><a class="dropdown-item" href="#"><img src="https://cdn.icon-icons.com/icons2/2406/PNG/512/user_account_icon_145918.png" width="30px" height="30px"> Overwatch Profile</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod6SmLF3zlFa7Ga6gsmiI1z-V-qGt4WshNQ&s" width="30px" height="30px">Account Settings</a></li>
+    <li><a class="dropdown-item" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROjfvSkKcgjNHB-p9nFGa6aSZL-qy8jJSXtw&s" width="30px" height="30px">Sign Up</a></li>
+  </ul>
+</div>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- PICTURE -->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div style="margin-top: rem;" class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/rd/RD6WW1IHOJXC1691550005916.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       <h1 class="heroes" style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">HEROES</h1> 
+
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- PICTURE END-->
+
+
+<!-- DAMAGE HERO -->
+
+<div style="background-image: linear-gradient(#009dff,#33b1ff,#66c4ff);; ">
+
+    <div class="container text-center col-lg-12 col-xl-6">
+
+        <h1 class="click" style="padding-top: 10px; color: #black;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);  ">CLICK</h1>
+
+                       <p class="infoclick">Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below. </p>
+
+       <br> <a class="btnheroes btn-light btn mb-3" href="#damagehero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg"> DAMAGE</a> 
+
+       <a class="btnheroes btn-light btn mb-3" href="#tankhero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg"> TANK</a>
+
+       <a class="btnheroes btn-light btn mb-3" href="#supporthero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg"> SUPPORT</a><br>
+
+        <a style="padding-top: 14rem;" id="damagehero" class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="60" height="60" class="infoheroimg d-inline-block mt-5"></a> <h1 class="infohero" style="font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700">DAMAGE</h1>
+
+</div>
+
+
+<!-- DAMAGE HERO CARD -->
+
+<div class="container mt-5">
+<div class="row">
+
+<!-- line 1 -->
+  <div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/5dd2747b4aac4c35afe6c5b54b1808bb.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">VENTURE</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/4160fdeb138e46779aadae0ef5502195.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ASHE</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/9286dc83ee2f4b1ebc3154b69387abdf.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">BASTION</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/dfc27e0e844747a5b7e4169c1cf2de3c.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">CASSIDY</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/55cae847539f4e8dbefb89edc31e5693.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ECHO</h5>
+  </div>
+</div>
+<!-- line 1 end -->
+
+<!-- line 2 -->
+<div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/ff59b2b9230a4f5b8c1ecbca99a13d22.png" class="card-img-top" alt="logo"> <hr> </a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">GENJI</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/499cca6f05d84e1595208facbef94e41.png" class="card-img-top" alt="logo"> <hr> </a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">HANZO</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/aff9a397a34d482db84a2e75002556a5.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">JUNKRAT</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/ad67bcc9b7094dd089dd44fac2e4fc6b.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">MEI</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/c4cabc61d9ec47a7b15a192e7b3153a8.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">PHARAH</h5>
+  </div>
+</div>
+<!-- line 2 end -->
+
+<!-- line 3 -->
+<div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/8f76944e0fbc4922a6a0b91d0402a41c.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">REAPER</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/cab1d7b35de74323bacc232e132633ff.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">SOJOURN</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/9e2f7f141a004bf4b0fb3a3331df337c.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">SOLDIER: 76</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/4a80cae70c2c4363824b035b42c656ff.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">SOMBRA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/eb221ee4584b4571a1f70f7fb2d92e1a.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">SYMMETRA</h5>
+  </div>
+</div>
+
+<!-- line 3 end -->
+<!-- line 4 -->
+
+<div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/cf0b46c3a3e44a3ab6655be5aac4034d.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">Torbjörn</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-6 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/ba16b7f8672e4ff0a74588181aed6cd2.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">TRACER</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-6 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/f75bd357c17b43c49b86fb2621d1252c.png" class="card-img-top" alt="logo"></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">WIDOWMAKER</h5>
+  </div>
+</div>
+<!-- line 4 end -->
+<!-- DAMAGE HERO CARD END -->
+<!-- DAMAGE HERO END -->
+
+
+
+<!-- TANK HERO -->
+ <div class="container text-center col-lg-12 col-xl-6">
+
+       <br> <br> <br> <a class="btnheroes btn-light btn mb-3 " href="#damagehero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg"> DAMAGE</a> 
+
+       <a class="btnheroes btn-light btn mb-3" href="#tankhero"role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg"> TANK</a>
+
+       <a class="btnheroes btn-light btn mb-3" href="#supporthero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg"> SUPPORT</a><br>
+
+        <a id="tankhero" style="padding-top: 14rem;" class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="60" height="60" class="infoheroimg d-inline-block mt-5"></a> <h1 class="infohero" style="font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700">TANK</h1>
+
+</div>
+
+<!-- TANK HERO CARD -->
+
+<div class="container mt-5">
+<div class="row">
+
+<!-- line 1 -->
+  <div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/70ad8d4941eb4ac896d44244692f4080.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">D.VA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/c9e1c591f7a5496aafa5e9ed5d1770f1.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">DOOMFIST</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/ce9d6bf3665147bc860a50aa3ee74221.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">JUNKER QUEEN</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/91a9908fa13045d7ac63f12c09a22c6b.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">MAUGA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/754f990781b7487d8b6a76c51d185c35.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ORISA</h5>
+  </div>
+</div>
+<!-- line 1 end -->
+
+<!-- line 2 -->
+ <div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/45750e2f41fa47c59a0f5ca22a7f7aec.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">RAMATTRA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/fed3ac6c04fc483e8b1f5b8306c2aefa.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">REINHARDT</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/3a94dbe4f5554934bbdb7c6b36e56f88.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ROADHOG</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/085208f6f76c4b59b5e697e1aa509c38.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">SIGMA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/a8816ac80c0842cfa5a97e7ac2d51913.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">WINSTON</h5>
+  </div>
+</div>
+<!-- line 2 end -->
+
+<!-- line 3 -->
+ <div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/b1ed4f42797240a2951508b0a7c55832.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">WRECKING BALL</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/75faf78902af4050a2a95103bd1e3cd2.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ZARYA</h5>
+  </div>
+</div>
+</div>
+
+<!-- line 3 end -->
+<!-- line 4 -->
+
+ 
+<!-- TANK HERO CARD END -->
+<!-- TANK HERO END -->
+
+
+
+<!-- SUPPORT HERO -->
+ <div class="container text-center col-lg-12 col-xl-6">
+
+       <br> <br> <br> <a class="btnheroes btn-light btn mb-3 " href="#damagehero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt052e8b02aef879b0/dark_circle_damage.svg"> DAMAGE</a> 
+
+       <a class="btnheroes btn-light btn mb-3" href="#tankhero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/bltcb94e9203be4088a/dark_circle_tank.svg"> TANK</a>
+
+       <a class="btnheroes btn-light btn mb-3" href="#supporthero" role="button"> <img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg"> SUPPORT</a><br>
+
+        <a id="supporthero" style="padding-top: 14rem;" class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="60" height="60" class="infoheroimg d-inline-block mt-5"></a> <h1 class="infohero" style="font-size: xx-large; color: hsla(0,0%,100%,.9);font-weight: 700">SUPPORT</h1>
+
+    </div>
+
+
+<!-- SUPPORT HERO CARD -->
+
+<div class="container mt-5">
+<div class="row">
+
+<!-- line 1 -->
+  <div class="card mt-2 ms-5 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/6f01f9fa56594b88b2079998ad47aedc.png" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ANA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/2a227ccad30246b8ac6314ad9bfdafac.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">BAPTISTE</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/158a39c2671049d39001cf2a17120d01.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">BRIGITTE</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/1b4de67c671848b2bb00997a55e945f4.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ILLARI</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/8d84fe2bc8d042a68af775092f9deea2.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">KIRIKO</h5>
+  </div>
+</div>
+<!-- line 1 end -->
+
+<!-- line 2 -->
+<div class="card mt-2 ms-5 col-lg-3 col-sm-6 mb-5" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/a4b6919ac16948bd86b0619fafad07d2.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">LIFEWEAVER</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6 mb-5" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/38fc27912a014c40ab52a8b5bb34e736.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">Lúcio</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6 mb-5" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/93d1afbacfe34237b1c2f6191a1438f6.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">MERCY</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6 mb-5" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/f98b11e8e7be4a5aa6500df6e27a649a.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">MOIRA</h5>
+  </div>
+</div>
+
+<div class="card mt-2 ms-4 col-lg-3 col-sm-6 mb-5" style="width: 14rem;">
+ <a href="#"><img src="https://static1.personality-database.com/profile_images/0733babb84fe42719d7bfbb7cf8d65fd.png" class="card-img-top" alt="logo"><hr></a>
+  <div class="card-body">
+    <a class="" href=""><img src="https://images.blz-contentstack.com/v3/assets/blt9c12f249ac15c7ec/blt8cf279e9b3126ef8/dark_circle_support.svg" alt="Logo" width="40" height="40" class="d-inline-block mt-5"></a> <h5 style="color: black;">ZENYATTA</h5>
+  </div>
+</div>
+
+    </div>
+        </div>
+    </div>
+        </div>
+    </div>
+<!-- line 2 end -->
+<!-- SUPPORT HERO CARD END -->
+<!-- SUPPORT HERO END -->
+
+
+<!-- FOOTER SOSMED -->
+
+<div style="min-height: 0px; background-image: linear-gradient(to left,rgba(38, 50, 77, 0.959), rgb(71, 93, 134),rgba(38, 50, 77, 0.959));;">
+
+    <div class="container text-center"> <br>
+         <h1 class="stay" style="color: #fff;
+                font-family: Big Noodle Too,impact;
+                font-size: 40px;
+                font-style: italic;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 32px;
+                text-shadow: 0 4px 10px rgba(0,0,0,.2);">STAY CONNECTED</h1>
+    </div>
+    <br> <br>
+
+    <div class="logo text-center justify-content-center">
+
+        <a style="margin-left:; " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWQtmRYRE2pKMMWs-voz8ZKqwDmD2s93-eQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+        
+        <a style="margin-left:  " class="gun" href="#">
+      <img style="background: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHCv2roPyXwqS4UagIhO7dojXYOf7Qs5V3Rg&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style=";background-color:hsla(0,0%,100%,.15) ;
+border-radius: 50%;
+padding: 5px;" src="https://cdn.icon-icons.com/icons2/1221/PNG/512/1492608049-15-youtube-video-player-play-logo-media_83366.png" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+
+     <a style="margin-left:  " class="gun" href="#">
+      <img style="background-color: hsla(0,0%,100%,.15);
+border-radius: 50%;
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRap2mGyOXLUZWDk7vco575fuMNwl7DhFjcQ&s" alt="Logo" width="60" height="60" class="d-inline-block ">
+     </a>
+     <br><br>
+    </div>
+
+</div>
+
+<!-- FOOTER SOSMED END -->
+
+<!-- FOOTER -->
+
+<div style="min-height: 500px; background-image: linear-gradient(to left,rgba(26, 32, 49, 0.959),rgb(54, 65, 85), rgba(26, 32, 49, 0.959) );; ">
+<div class="container">
+        <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul class="footer-links mt-5">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <hr>
+                <div class="footer-section">
+                <div class="mt-5 ms-2">
+<a style="margin-left:20px  " class="gun mt-5" href="#">
+      <img style=";
+padding: 5px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRI4NiIsbFSGQ3E_SCb8IHM51d1AUpA4qrA&s" alt="Logo" width="30%" height="135" class="blizzard">
+     </a>
+     <p class="infoter" style="color:#fff;" class="ms-2">©2024 Blizzard Entertainment, Inc.
+All trademarks
+ referenced herein are the properties of their respective owners.</p>
+</div>
+  </div>
+    </div>
+           
+           
+        <div class="footer-bottom">
+              <div class="btn-group dropend mt-5">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    English (US)
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Indonesia</a></li>
+    <li><a class="dropdown-item" href="#">Arabic</a></li>
+    <li><a class="dropdown-item" href="#">Spanish</a></li>
+    <li><a class="dropdown-item" href="#">Jawa</a></li>
+    <li><a class="dropdown-item" href="#">Madura</a></li>
+  </ul>
+</div>        
+    </footer>
+
+
+ </div>
+</div>
+
+
+<!-- FOOTER END -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script type="">
+        ScrollReveal({
+            reser : true,
+            distance :'60px',
+            duration : 2500,
+            delay:400 
+        });
+
+        //NAVBAR 
+          ScrollReveal().reveal('.navbar', {delay :300, origin: 'bottom' });
+           ScrollReveal().reveal('.btn-group', {delay :300, origin: 'left' });
+            ScrollReveal().reveal('.btnav', {delay :300, origin: 'right' });
+             ScrollReveal().reveal('.heroes', {delay :300, origin: 'right' });
+           // NAVBAR END
+
+             // ISI
+              ScrollReveal().reveal('.click', {delay :300, origin: 'top' });
+               ScrollReveal().reveal('.infoclick', {delay :300, origin: 'left' });
+                ScrollReveal().reveal('.btnheroes', {delay :300, origin: 'bottom' });
+                 ScrollReveal().reveal('.infohero', {delay :300, origin: 'bottom' });
+                  ScrollReveal().reveal('.infoheroimg', {delay :300, origin: 'left' });
+                   ScrollReveal().reveal('.card', {delay :300, origin: 'bottom' });
+             // ISI END
+
+                    // FOOTER SOSMED
+                      ScrollReveal().reveal('.stay', {delay :300, origin: 'bottom' });
+                       ScrollReveal().reveal('.logo', {delay :300, origin: 'top' });
+                     // FOOTER SOSMED END
+
+                       // FOOTER
+                        ScrollReveal().reveal('.footer-links', {delay :300, origin: 'left' });
+                         ScrollReveal().reveal('.blizzard', {delay :300, origin: 'bottom' });
+                          ScrollReveal().reveal('.infoter', {delay :300, origin: 'right' });
+                       // FOOTER END
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
